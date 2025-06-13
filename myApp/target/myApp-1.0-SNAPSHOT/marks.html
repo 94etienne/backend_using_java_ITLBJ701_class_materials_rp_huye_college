@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Student Marks Calculator</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            .form-container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            h3 {
+                color: #333;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            .form-row {
+                display: flex;
+                margin-bottom: 10px;
+            }
+            .form-column {
+                flex: 1;
+                padding: 0 10px;
+            }
+            .divider {
+                border-top: 1px solid #ddd;
+                margin: 15px auto;
+                width: 80%;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+            .submit-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h3>RP Huye College</h3>
+            <div class="divider"></div>
+            <p style="text-align: center;">Enter marks of the following subjects</p>
+            
+            <form action="mar" method="post">
+                <div class="form-row">
+                    <div class="form-column">
+                        <label>Maths:</label>
+                        <input type="text" name="num1">
+                        
+                        <label>English:</label>
+                        <input type="text" name="num2">
+                        
+                        <label>Hindi:</label>
+                        <input type="text" name="num3">
+                    </div>
+                    
+                    <div class="form-column">
+                        <label>Science:</label>
+                        <input type="text" name="num4">
+                        
+                        <label>Social Science:</label>
+                        <input type="text" name="num5">
+                        
+                        <label>IT:</label>
+                        <input type="text" name="num6">
+                    </div>
+                </div>
+                
+                <div class="submit-container">
+                    <input type="submit" value="Calculate Marks">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

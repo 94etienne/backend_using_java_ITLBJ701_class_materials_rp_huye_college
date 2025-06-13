@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Salary Calculator - Studytonight.com</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 20px;
+            }
+            .form-container {
+                max-width: 400px;
+                margin: 30px auto;
+                padding: 25px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            h3 {
+                color: #2a6496;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .divider {
+                text-align: center;
+                color: #888;
+                margin: 10px 0 20px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                width: 100%;
+                margin-top: 10px;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <form action="sal" method="post">
+                <h3>RP Huye College L6 IT</h3>
+                <div class="divider">---------------------------</div>
+                
+                <div class="form-group">
+                    <label for="num1">Enter Basic Salary:</label>
+                    <input type="text" id="num1" name="num1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="num2">Enter Basic DA (%):</label>
+                    <input type="text" id="num2" name="num2" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="num3">Enter Basic HRA (%):</label>
+                    <input type="text" id="num3" name="num3" required>
+                </div>
+                
+                <input type="submit" value="Calculate Salary">
+            </form>
+        </div>
+    </body>
+</html>
